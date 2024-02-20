@@ -1,15 +1,16 @@
 .footer {
-  color: #545454;
   margin: 67px auto 60px auto;
   text-align: left;
+  color: #545454;
 }
 
 .footer__copyright {
   font-family: Inter, Arial, sans-serif;
-  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  font-size: 18px;
+
 }
 
 @media screen and (max-width: 900px) {
