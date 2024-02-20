@@ -1,11 +1,11 @@
 export default class Card {
-  constructor(data, cardSelector, handleImageClick) {
-    this.name = data.name;
-    this.link = data.link;
+  constructor({ name, link }, cardSelector, handleImageClick) {
+    this.name = name;
+    this.link = link;
     this._cardSelector = cardSelector;
     this._handleImageClick = handleImageClick;
   }
-
+  
   _setEventListeners() {
     this._cardLikeButton.addEventListener("click", () => {
       this._handleLikeIcon();
