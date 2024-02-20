@@ -31,7 +31,7 @@ export default class Card {
       .querySelector(this._cardSelector)
       .content.querySelector(".card")
       .cloneNode(true);
-    this._cardImage = this._cardElement.querySelector(".card__image");
+    this._cardImage = this._cardElement.querySelector(".card__picture");
     this._cardTitle = this._cardElement.querySelector(".card__text");
     this._cardLikeButton =
       this._cardElement.querySelector(".card__like-button");
