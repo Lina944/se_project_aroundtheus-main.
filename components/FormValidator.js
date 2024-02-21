@@ -53,6 +53,13 @@ class FormValidator {
     this._submitButton.disabled = false;
   }
 
+  _toggleButtonState(inputEls, submitButton, options) {
+    if (this._hasInvalidInput(inputEls)) {
+      this._disableButton(submitButton);
+      return;
+    }
+    this._enableButton(inputEls, submitButton, options);
+  }
 
   _setEventListeners(options) {
     this._toggleButtonState(options);
@@ -78,14 +85,5 @@ class FormValidator {
     this._disableButton(this._submitButton);
   }
 }
-
-_toggleButtonState(inputEls, submitButton, options); {
-  if (this._hasInvalidInput(inputEls)) {
-    this._disableButton(submitButton);
-    return;
-  }
-  this._enableButton(inputEls, submitButton, options);
-}
-
 
 export default FormValidator;
